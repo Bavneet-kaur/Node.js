@@ -1,0 +1,24 @@
+Asynchronous Execution: 
+A code runs asynchronously with another code.
+Synchronous Execution: 
+You need to wait for one code block to finish before executing the next block. 
+
+Asynchronous programming occurs in the time between a function call and a function return. 
+
+One simple example would be if you have a program that interacts with a database, 
+when you send a request to a database and you wait for a response, that is when there is the
+time between the function call and the return, The call sends the request to the database. 
+You need to wait for the data to come back from the database.And that could take time; 
+it depends on where the database is and how complex the query is.
+
+There is a variable amount of time between the call and the return.In such situations, 
+the user must know to handle the behavior. In real-time, the user need not wait for the 
+database query to complete unless they need the data immediately.
+
+Understanding Callbacks:
+
+Setting a function to call when another process completes.
+So in that database example, the user will set up a function that will run when the data is 
+returned from the database. The function prints out the returned data, allowing the user to 
+handle the processing asynchronously. A response is sent for the request.Until the callback 
+function runs, the user can execute another code in the program.  
